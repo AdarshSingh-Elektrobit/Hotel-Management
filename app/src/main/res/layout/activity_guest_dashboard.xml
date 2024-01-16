@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuestDashboard">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Guest DashBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkInDateBtn"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+
+        android:text="Check-in Date" />
+
+    <Button
+        android:id="@+id/checkoutDateBtn"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/checkInDateBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+
+        android:text="Check-out Date" />
+
+
+    <Button
+        android:id="@+id/checkin"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/checkoutDateBtn"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="415dp"
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+        android:text="Proceed to Check-in"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="checkIn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
