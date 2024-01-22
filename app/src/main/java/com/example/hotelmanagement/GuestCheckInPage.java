@@ -18,5 +18,9 @@ public class GuestCheckInPage extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),GuestLogin.class);
         startActivity(intent);
 
+//        Intent intent = new Intent(Intent.ACTION_CALL);
+
+
+
     }
 }
